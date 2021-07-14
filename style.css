@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 100vmin;
+  width: 100vmin;
+  background-color: #dfe4e8;
+  display: grid;
+  grid-template-columns: repeat(27, 1fr);
+  grid-template-rows: repeat(27, 1fr);
+}
+.snake {
+  background-color: #1c3f5c;
+  border-radius: 50%;
+}
+.food {
+  background-color: #d62f61;
+  border-radius: 50%;
+}
+.score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  margin: 8px 20px;
+}
+.ui {
+  position: fixed;
+  background-color: #0d304f;
+  color: #fff;
+  width: 50vmin;
+  padding: 5vmin;
+  text-align: center;
+  border-radius: 8%;
+}
+.ui > h1 {
+  font-size: 2.3rem;
+}
+.ui > .score_ui {
+  font-size: 2.5rem;
+}
+.ui > .points {
+  color: #bcc6cf;
+}
+.ui > .about {
+  color: #f56767;
+}
+.ui > .start {
+  cursor: pointer;
+  margin-top: 5%;
+  padding: 5px 12px;
+  font-weight: 700;
+  color: #0d304f;
+  background-color: #fff;
+  border: none;
+}
+.ui > .start:hover {
+  background-color: #00161b;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.hidden {
+  display: none;
+}
